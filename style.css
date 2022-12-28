@@ -1,0 +1,136 @@
+:root {
+  --clr-primary-soft-blue: hsl(215, 51%, 70%);
+  --clr-primary-cyan: hsl(178, 100%, 50%);
+
+  --clr-neutral-very-dark-blue-main: hsl(217, 54%, 11%);
+  --clr-neutral-very-dark-blue-card: hsl(216, 50%, 16%);
+  --clr-neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--clr-primary-soft-blue);
+  background-color: var(--clr-neutral-very-dark-blue-main);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: calc(326px - 48px);
+  height: calc(543px - 48px);
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-very-dark-blue-card);
+  padding: 1.5rem;
+}
+
+img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 278px;
+  height: 278px;
+}
+.overlay:hover {
+  background-color: var(--clr-primary-cyan);
+  opacity: 0.6;
+  background-image: url("./images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  color: var(--clr-neutral-white);
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+h1:hover {
+  color: var(--clr-primary-cyan);
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  height: 1.25rem;
+  margin: 1rem 0;
+}
+
+.course {
+  color: var(--clr-primary-cyan);
+  font-weight: 600;
+}
+.course img {
+  height: 1.125rem;
+  width: 0.75rem;
+  margin-bottom: -0.125rem;
+  margin-right: 0.125rem;
+}
+
+.deadline img {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: -0.125rem;
+  margin-right: 0.125rem;
+}
+
+hr {
+  color: var(--clr-neutral-very-dark-blue-line);
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author img {
+  height: 33px;
+  width: 33px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 19px;
+  border-width: 1px;
+  margin-right: 1rem;
+}
+
+.author span {
+  color: var(--clr-neutral-white);
+}
+
+.author span:hover {
+  color: var(--clr-primary-cyan);
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    width: calc(350px - 48px);
+    height: calc(596px - 48px);
+  }
+  .overlay {
+    width: 302px;
+    height: 302px;
+  }
+  p {
+    margin-right: 1rem;
+  }
+}
