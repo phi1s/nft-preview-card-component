@@ -43,8 +43,7 @@ img {
   height: 278px;
 }
 .overlay:hover {
-  background-color: var(--clr-primary-cyan);
-  opacity: 0.6;
+  background-color: hsla(178, 100%, 50%, 0.6);
   background-image: url("./images/icon-view.svg");
   background-repeat: no-repeat;
   background-position: center;
